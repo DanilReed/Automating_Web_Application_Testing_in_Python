@@ -1,4 +1,4 @@
-from Automating_Web_Application_Testing_in_Python.check_text import check_text
+from check_text import check_text
 import pytest
 
 def test_step():

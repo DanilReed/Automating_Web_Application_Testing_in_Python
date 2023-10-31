@@ -1,4 +1,4 @@
-from Automating_Web_Application_Testing_in_Python.login import get_post
+from login import get_post
 import pytest
 
 def test_step1(login):
