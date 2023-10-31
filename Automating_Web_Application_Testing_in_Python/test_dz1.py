@@ -1,4 +1,4 @@
-from Automating_Web_Application_Testing_in_Python.login import login, get_post
+from login import login, get_post
 import requests
 import yaml
 
