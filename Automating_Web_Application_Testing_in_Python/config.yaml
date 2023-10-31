@@ -1,0 +1,8 @@
+url: "https://speller.yandex.net/services/spellservice?WSDL"
+url_login: "https://test-stand.gb.ru/gateway/login"
+url_post: "https://test-stand.gb.ru/api/posts"
+"username": "Patty Barrows"
+"password": "625cdcbddc"
+"title": "Hello"
+"description": "Description"
+"content": "Content"
