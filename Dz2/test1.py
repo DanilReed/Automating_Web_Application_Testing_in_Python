@@ -46,8 +46,8 @@ def test_step3(site, selector_login, selector_passwd, selector_button_post, sele
     btn = site.find_element("css", selector_button_check)
     btn.click()
 
-    # valid_text3 = site.find_element("xpath", selector_home)
-    # assert valid_text3.text == "Home"
+    valid_text3 = site.find_element("xpath", selector_home)
+    assert valid_text3.text == "Home", "Test Fail"
 
     btn = site.find_element("xpath", selector_button_post)
     btn.click()
@@ -57,6 +57,7 @@ def test_step3(site, selector_login, selector_passwd, selector_button_post, sele
 
     input1 = site.find_element("xpath", selector_description)
     input1.send_keys(testdata.get("description"))
+    time.sleep(3)
 
     btn = site.find_element("xpath", selector_button_save)
     btn.click()
