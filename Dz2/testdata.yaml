@@ -1,0 +1,7 @@
+address: https://test-stand.gb.ru
+browser: chrome
+sleep_time: 1
+username: Patty Barrows
+passwd: 625cdcbddc
+title: Test_Passed
+description: If you are reading this it means the test was successful.
