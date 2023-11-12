@@ -40,6 +40,7 @@ def test_step3(browser):
     time.sleep(2)
     assert testpage.get_alert_text() == "Form successfully submitted"
     browser.quit()
+
 def test_step4(browser):
     logging.info("Test4 Starting")
     testpage = OperationHelper(browser)
