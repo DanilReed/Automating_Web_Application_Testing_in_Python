@@ -1,36 +1,3 @@
-# import smtplib
-# from email.mime.text import MIMEText
-# from email.mime.multipart import MIMEMultipart
-# import yaml
-#
-# with open("testdata.yaml") as f:
-#     testdata = yaml.safe_load(f)
-#
-# fromaddr = (testdata.get("report_mail"))
-# toaddr = (testdata.get("report_mail"))
-# api_key = (testdata.get("report_passwd"))
-#
-# msg = MIMEMultipart()
-# msg['from'] = fromaddr
-# msg['To'] = toaddr
-# msg['Subject'] = "Hello python"
-#
-# body = "это пробное сообщение"
-# msg.attach(MIMEText(body, 'plain'))
-#
-# # Просто добавьте текстовую строку в тело сообщения
-# report_text = "Содержимое вашего отчета или текстовая информация"
-# msg.attach(MIMEText(report_text, 'plain'))
-#
-# server = smtplib.SMTP_SSL('smtp.mail.ru', 465)
-#
-# # Аутентификация с использованием API ключа
-# server.ehlo()
-# server.login(fromaddr, api_key)
-#
-# text = msg.as_string()
-# server.sendmail(fromaddr, toaddr, text)
-# server.quit()
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
