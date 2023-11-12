@@ -1,5 +1,4 @@
 import logging
-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import  expected_conditions as EC
 
@@ -27,6 +26,7 @@ class BasePage:
         else:
             logging.error(f"Property {property} not found in element with locator {locator}")
             return None
+
     def go_to_site(self):
         try:
             start_browser = self.driver.get(self.base_url)
