@@ -7,6 +7,7 @@ from report import send_email
 
 with open("testdata.yaml", encoding="utf-8") as f:
     testdata = yaml.safe_load(f)
+    
 def test_step1(browser):
     logging.info("Test1 Starting")
     testpage = OperationHelper(browser)
