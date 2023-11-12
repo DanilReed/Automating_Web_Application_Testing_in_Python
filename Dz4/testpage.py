@@ -11,6 +11,7 @@ class TestSearchLocators:
         ids[locator] = (By.XPATH, locators["xpath"][locator])
     for locator in locators["css"].keys():
         ids[locator] = (By.CSS_SELECTOR, locators["css"][locator])
+
 class OperationHelper(BasePage):
 
 #Enter text
@@ -31,6 +32,7 @@ class OperationHelper(BasePage):
             logging.exception(f"Exception while operation with {locator}")
             return False
         return True
+
     def enter_login(self, word):
         self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_LOGIN_FIELD"], word)
 
@@ -74,6 +76,7 @@ class OperationHelper(BasePage):
         except Exception as e:
             logging.exception(f"An error occurred while downloading the image: {e}")
 
+
     # click
 
     def click_button(self, locator, description=None):
@@ -91,6 +94,7 @@ class OperationHelper(BasePage):
             return False
         logging.debug(f"Clicked {element_name} button")
         return True
+
     def click_login_button(self):
         self.click_button(TestSearchLocators.ids["LOCATOR_LOGIN_BTN"], description="login")
 
@@ -133,6 +137,7 @@ class OperationHelper(BasePage):
             return None
         logging.debug(f"We find text {text} in field {element_name}")
         return text
+
     def get_alert_text(self):
         alert_field = self.driver.switch_to.alert
         text = alert_field.text
